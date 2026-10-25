@@ -1,0 +1,39 @@
+{
+  "name": "dsh-vision-all",
+  "version": "0.1.1",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "description": "一刀切视觉声明：所有 llm provider（含以后新增）自动 defaultInput=[text,image]，适用于未声明视觉能力的 OpenAI 兼容中转站",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "vision",
+    "multimodal"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GGBound-1229/dsh-vision-all.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GGBound-1229/dsh-vision-all/issues"
+  },
+  "homepage": "https://github.com/GGBound-1229/dsh-vision-all#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# dsh-vision-all — 一刀切视觉声明
+# 插到 profile 启动链上，拦截 llm-pi-ai 的 providers 配置，
+# 给当前及以后新增的所有 provider 补上 defaultInput=[text,image]
+- insert:
+    - id: dsh-vision-all
+      name: dsh-vision-all
